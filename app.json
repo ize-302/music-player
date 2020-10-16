@@ -1,26 +1,11 @@
 {
   "expo": {
-    "name": "music-player",
-    "slug": "music-player",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "userInterfaceStyle": "automatic",
     "ios": {
-      "supportsTablet": true
+      "userInterfaceStyle": "automatic"
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "android": {
+      "userInterfaceStyle": "automatic"
     }
   }
 }
