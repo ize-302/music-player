@@ -9,6 +9,7 @@ import { colors } from "../../utils/styles";
 import { useColorScheme } from "react-native-appearance";
 import MusicCard from "../../components/MusicCard";
 import Player from "../../components/Player";
+import { ScreenProps } from "react-native-screens";
 
 const likedSongs = [
   {
@@ -43,7 +44,7 @@ const likedSongs = [
   },
 ];
 
-const LikedSongsScreen = ({ navigation }) => {
+const LikedSongsScreen = ({ navigation }: ScreenProps) => {
   // styling vars
   const colorScheme = useColorScheme();
   const styles = getStyles();

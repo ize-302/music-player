@@ -3,6 +3,21 @@ import { View, Text, Image } from "react-native";
 import getStyles from "./styles";
 import { useColorScheme } from "react-native-appearance";
 
+type Props = {
+  key: number;
+  imageWidthHeight: number;
+  cardSpacing: number;
+  songDetailTopSpace: number;
+  songDetail: {
+    title: string;
+    artist: string;
+    thumbnail: object;
+  };
+  artistFontSize: number;
+  songTitleFontSize: number;
+  cardSpacingBottom: number | boolean;
+};
+
 const MusicCard = ({
   imageWidthHeight,
   cardSpacing,
@@ -11,7 +26,7 @@ const MusicCard = ({
   artistFontSize,
   songTitleFontSize,
   cardSpacingBottom,
-}) => {
+}: Props) => {
   // styling vars
   const styles = getStyles();
 
