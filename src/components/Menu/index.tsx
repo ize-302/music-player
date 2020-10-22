@@ -32,7 +32,11 @@ const menuItems = [
   },
 ];
 
-const Menu = ({ toggleMenu }) => {
+type Props = {
+  toggleMenu: () => void;
+};
+
+const Menu = ({ toggleMenu }: Props) => {
   const styles = getStyles();
   const navigation = useNavigation();
 

@@ -37,7 +37,7 @@ const myPlaylists = [
   },
 ];
 
-const RecommendedScreen = ({ navigation }) => {
+const RecommendedScreen = () => {
   // styling vars
   const colorScheme = useColorScheme();
   const styles = getStyles();
@@ -88,6 +88,7 @@ const RecommendedScreen = ({ navigation }) => {
               {recommendedSongs.map((song, index) => {
                 return (
                   <MusicCard
+                    cardSpacingBottom={false}
                     key={index}
                     imageWidthHeight={190}
                     cardSpacing={index === recommendedSongs.length - 1 ? 0 : 14}
@@ -111,6 +112,7 @@ const RecommendedScreen = ({ navigation }) => {
               {myPlaylists.map((song, index) => {
                 return (
                   <MusicCard
+                    cardSpacingBottom={false}
                     key={index}
                     imageWidthHeight={190}
                     cardSpacing={index === recommendedSongs.length - 1 ? 0 : 14}

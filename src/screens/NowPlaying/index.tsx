@@ -9,7 +9,7 @@ import { TouchableOpacity } from "react-native-gesture-handler";
 import getGlobalStyles from "../../utils/styles";
 import SliderComponent from "../../components/Player/slider";
 
-const NowPlayingScreen = (props: any) => {
+const NowPlayingScreen = () => {
   const colorScheme = useColorScheme();
   const styles = getStyles();
   const globalStyles = getGlobalStyles();
