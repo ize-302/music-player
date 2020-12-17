@@ -44,7 +44,7 @@ const likedSongs = [
   },
 ];
 
-const LikedSongsScreen = ({ navigation }: ScreenProps) => {
+const LikedSongsScreen = ({ navigation }: ScreenProp) => {
   // styling vars
   const colorScheme = useColorScheme();
   const styles = getStyles();
